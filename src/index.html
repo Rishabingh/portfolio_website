@@ -191,12 +191,42 @@
               </div>
 
         </div>
-       <div class="lg:col-span-3 md:col-span-2 col-span-1 justify-self-end lg:mr-8 border-b hover:border-b-3"><a href="./project.html">See All Projects..</a></div>
+       <div class="lg:col-span-3 md:col-span-2 col-span-1 justify-self-end lg:mr-8 border-b hover:border-b-3 h-7 mb-3"><a href="./project.html">See All Projects..</a></div>
      
     </div>
         
 
+     <div class="form-section w-[75vw] mx-auto flex flex-col justify-center items-center my-10 md:w-[50vw]">
 
+        <div class="form-heading md:text-3xl text-wrap w-fit mx-auto">
+            Got something cool in mind? I’m open to work, collaboration, and freelance gigs. Feel free to reach out anytime.
+        </div>
+
+        <form method="POST" id="form" class="flex flex-col gap-4 w-fit mx-auto my-12 justify-center items-center">
+
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+           <div>
+               <input type="text" name="name" required placeholder="Name" class="border-[#FCA311] border p-3 h-12 placeholder:text-xl focus:border-[#14213D] focus:outline-none">
+               <input type="email" name="email" required placeholder="Email" class="border border-[#FCA311] p-3 h-12 placeholder:text-xl focus:border-[#14213D] focus:outline-none">
+           </div>
+            <textarea name="message" required placeholder="Enter Your Message" class="border border-[#FCA311] h-16 w-[438px] p-3 placeholder:text-xl"></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <button type="submit" class="border-[#FCA311] border w-fit mx-auto p-3 hover:scale-105 cursor-pointer active:border-b-blue-400">Submit Form 🚀</button>
+        
+            <div id="result"></div>
+        
+        </form>
+
+        <div class="form-heading md:text-2xl text-wrap w-fit mx-auto">
+            Or Directly Mail Me at: <a href="mailto:rishabsiingh@outlook.com">rishabsiingh@outlook.com</a>
+            <div class="hover:scale-95">
+                <a href="mailto:rishabsiingh@outlook.com" class="bg-[#FCA311] text-[#14213D] p-1 rounded-md">Mail Now🚀</a>
+            </div>
+            
+        </div>
+
+     </div>
 
     
       </main>
