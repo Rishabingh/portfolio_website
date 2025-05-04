@@ -6,7 +6,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Tailwind source input (optional to ignore if regenerated or boilerplate)
-src/output.css
+src/input.css
 
 
 

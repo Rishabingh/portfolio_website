@@ -1,13 +1,71 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishab-Portfolio</title>
+    <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-black text-white py-25 font-mono">
+    <nav class="flex md:justify-around fixed left-0 right-0 top-0 py-2 items-center mb-2 justify-between">
+        <div class="left text-white bg-[#14213D] rounded-full p-2 h-11 w-11 flex justify-center items-center text-2xl font-semibold ml-4 md:ml-0">
+            <div>Rs</div>
+        </div>
+        <div class="right md:block hidden">
+            <ul class="flex gap-2 text-[#14213D] text-[1.1rem] font-medium">
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./index.html">Home</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./about.html">About Me</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./contact.html">Contact</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./resume.html">Resume</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./project.html">Projects</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="mobile-right md:hidden mr-4 cursor-pointer">
+            <img src="./images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+      </nav>
+    
+    <div class="touch-block hidden fixed top-0 left-0 right-0 bottom-0 z-10 bg-white/40 pointer-events-auto"></div>
+    
+      <div class="sidebar fixed right-0 bg-[#14213D] top-0 bottom-0 w-3xs pt-7 px-4 z-20 font-medium transform translate-x-full transition-transform duration-300">
+        <ul class="flex flex-col gap-y-9 text-[#FCA311]">
+            <li class="close-btn self-end cursor-pointer"><img src="./images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./index.html" class="flex gap-x-2.5"><img src="./images/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Home</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./about.html" class="flex gap-x-2.5"><img src="./images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> About Me</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./contact.html" class="flex gap-x-2.5"><img src="./images/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Contact</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./resume.html" class="flex gap-x-2.5"><img src="./images/work_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Resume</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./project.html" class="flex gap-x-2.5"><img src="./images/code_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Projects</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./blog.html" class="flex gap-x-2.5"><img src="./images/newspaper_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Blog</a></li>
+        </ul>
+      </div>
+
+      <main>
+        <div class="profile-section w-2xs m-auto">
+        
+            <div class="profile-upper">
+                <div class="flex items-baseline-last gap-2">
+                    <div class="first-name text-5xl">
+                        <div class="intro text-xs inline font-bold">Hey, there I am</div>
+                        <div>
+                            Rishab
+                        </div>   
+                    </div>
+                    <div class="profile-imgage"><img src="./images/khsitij-photo.webp" alt=""></div>
+                </div>
+            </div>
+
+            <div class="last-name text-5xl ml-14">Singh</div>
+            <div class="desc mt-6 text-lg text-wrap">I’m a developer, digital artist, consultant, and someone who enjoys turning ideas into interactive things on the web.</div>
+
+            <div class="profile-buttons mt-12 flex flex-col gap-6">
+                <div><a href="./about.html" class="bg-[#FCA311] text-[#14213D] p-2 rounded-2xl text-base font-extrabold">See More About Me...</a></div>
+                <div><a href="#" class="bg-[#FCA311] text-[#14213D] p-2 rounded-2xl text-base font-extrabold">Get My Resume..</a></div>
+            </div>
+        </div>
+      </main>
+
+
+      <script src="./navbar.js"></script>
 </body>
 </html>
