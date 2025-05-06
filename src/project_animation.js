@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     }
 
-  const imgGroup1 = ['./images/bg2.jpg', './images/bg3.jpg', './images/bg1.jpg'];
-  const imgGroup2 = ['./images/bg2.jpg', './images/bg3.jpg', './images/bg1.jpg'];
-  const imgGroup3 = ['./images/bg2.jpg', './images/bg3.jpg', './images/bg1.jpg'];
+  const imgGroup1 = ['./images/movie-project2img.png', './images/movie-project3img.png', './images/movie-project1img.png'];
+  const imgGroup2 = ['./images/rock-project2img.png', './images/rock-project3img.png', './images/rock-project1img.png'];
+  const imgGroup3 = ['./images/cal-project3img.png', './images/cal-project2img.png', './images/cal-project1img.png'];
 
   changeimage(1, imgGroup1);
   changeimage(2, imgGroup2);
