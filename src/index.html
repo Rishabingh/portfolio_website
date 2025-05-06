@@ -41,7 +41,7 @@
       </div>
 
       <main>
-        <div class="profile-section w-2xs m-auto">
+        <div class="profile-section w-2xs m-auto flex flex-col">
         
             <div class="profile-upper">
                 <div class="flex items-baseline-last gap-2">
@@ -65,10 +65,10 @@
         </div>
 
 
-        <div class="showcase md:w-[75vw] mx-auto flex flex-col mt-12">
+        <div class="showcase md:w-[75vw] mx-auto flex flex-col mt-12 w-fit">
             <div class="w-fit mx-auto">
             <div class="skill mb-8">
-             <div class="mb-5">Skills</div>
+             <div class="mb-5 ml-2 md:ml-0">Skills</div>
              <div class="flex gap-5 ml-4 flex-wrap">
                 <div class="flex items-center justify-center gap-3 border rounded-2xl p-1"><img src="./images/window-maximize-regular.svg" alt=""  width="32px" height="32px" class="invert"> <span class="leading-tight"><p>Frontend</p><p>Development</p></span></div>
 
@@ -79,7 +79,7 @@
              </div>
             </div>
             <div class="language mb-8">
-              <div class="mb-5">Languages & Frameworks</div>
+              <div class="mb-5 ml-2 md:ml-0">Languages & Frameworks</div>
               <div class="flex gap-5 flex-wrap ml-4">
                 <div class="flex items-center gap-3 border rounded-2xl p-1">
                     <div><img src="./images/react.svg" alt="" width="32px" height="32px" class="invert"></div> <span>React js</span>
@@ -105,9 +105,9 @@
               </div>
             </div>
             <div class="tools">
-                <div class="mb-5">Tools & Platforms</div>
-                <div class="flex gap-5 flex-wrap">
-                    <div class="flex items-center gap-3 ml-4 border rounded-2xl p-1">
+                <div class="mb-5 ml-2 md:ml-0">Tools & Platforms</div>
+                <div class="flex gap-5 flex-wrap ml-4">
+                    <div class="flex items-center gap-3 border rounded-2xl p-1">
                         <div><img src="./images/git.svg" alt=""  width="32px" height="32px" class="invert"></div> <span>React js</span>
                     </div>
                     <div class="flex items-center gap-3 border rounded-2xl p-1">
@@ -126,7 +126,7 @@
 
         </div>
 
-        <div class="project grid lg:grid-cols-3 gap-y-6 mt-8 md:w-[75vw] mx-auto md:grid-cols-2 grid-cols-1 gap-x-5">
+        <div class="project grid lg:grid-cols-3 gap-y-6 mt-8 md:w-[75vw] md:mx-auto md:grid-cols-2 grid-cols-1 gap-x-5 mx-2">
             <div class="col-span-1 font-bold text-2xl md:col-span-2 lg:col-span-3">Projects</div>
           
         <div class="project1">
@@ -196,20 +196,20 @@
     </div>
         
 
-     <div class="form-section w-[75vw] mx-auto flex flex-col justify-center items-center my-10 md:w-[50vw]">
+     <div class="form-section lg:w-[75vw] md:mx-auto flex flex-col justify-center items-center my-10 md:w-[50vw] mx-4">
 
-        <div class="form-heading md:text-3xl text-wrap w-fit mx-auto">
+        <div class="form-heading md:text-3xl text-wrap w-fit mx-auto text-2xl">
             Got something cool in mind? I’m open to work, collaboration, and freelance gigs. Feel free to reach out anytime.
         </div>
 
         <form method="POST" id="form" class="flex flex-col gap-4 w-fit mx-auto my-12 justify-center items-center">
 
             <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-           <div>
+           <div class="flex flex-col md:flex-row gap-3 md:gap-0">
                <input type="text" name="name" required placeholder="Name" class="border-[#FCA311] border p-3 h-12 placeholder:text-xl focus:border-[#14213D] focus:outline-none">
                <input type="email" name="email" required placeholder="Email" class="border border-[#FCA311] p-3 h-12 placeholder:text-xl focus:border-[#14213D] focus:outline-none">
            </div>
-            <textarea name="message" required placeholder="Enter Your Message" class="border border-[#FCA311] h-16 w-[438px] p-3 placeholder:text-xl"></textarea>
+            <textarea name="message" required placeholder="Enter Your Message" class="border border-[#FCA311] h-16 md:w-[438px] p-3 placeholder:text-xl w-[338px]"></textarea>
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         
             <button type="submit" class="border-[#FCA311] border w-fit mx-auto p-3 hover:scale-105 cursor-pointer active:border-b-blue-400">Submit Form 🚀</button>
@@ -218,7 +218,7 @@
         
         </form>
 
-        <div class="form-heading md:text-2xl text-wrap w-fit mx-auto">
+        <div class="form-heading md:text-2xl text-wrap w-fit mx-auto text-xl">
             Or Directly Mail Me at: <a href="mailto:rishabsiingh@outlook.com">rishabsiingh@outlook.com</a>
             <div class="hover:scale-95">
                 <a href="mailto:rishabsiingh@outlook.com" class="bg-[#FCA311] text-[#14213D] p-1 rounded-md">Mail Now🚀</a>
@@ -228,10 +228,10 @@
 
      </div>
          
-     <div class="blog-section md:w-[75vw] mx-auto flex flex-col justify-center">
+     <div class="blog-section md:w-[75vw] mx-auto flex flex-col justify-center m-1.5">
         
         <div class="blog-list flex flex-col max-w-[768px] mx-auto gap-6">
-            <div class="text-2xl ">Blog</div>
+            <div class="text-2xl">Blog</div>
 
             <div class="blog1 grid grid-cols-[1fr_3fr] max-w-[768px] items-center gap-3 w-fit mx-auto border-b pb-4">
                 <div class="img">
@@ -273,37 +273,37 @@
     
       </main>
 
-      <footer class="md:w-[75vw] mx-auto border-t-2 mt-8">
+      <footer class="md:w-[75vw] mx-auto border-t-2 mt-8 m-4 md:m-0">
         <div class="footer-nav">
             <ul class="flex gap-3 flex-wrap">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="./index.html" class="border-b">Home</a></li>
+                <li><a href="./about.html" class="border-b">About Me</a></li>
+                <li><a href="./contact.html" class="border-b">Contact</a></li>
+                <li><a href="./resume.html" class="border-b">Resume</a></li>
+                <li><a href="./project.html" class="border-b">Projects</a></li>
+                <li><a href="./blog.html" class="border-b">Blog</a></li>
             </ul>
         </div>
 
         <div class="extra-nav">
             <ul class="flex gap-3 flex-wrap mt-4">
-                <li><a href="#">Copyright</a></li>
-                <li><a href="#">Credits</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="./copyright.html" class="border-b">Copyright</a></li>
+                <li><a href="./credits.html" class="border-b">Credits</a></li>
+                <li><a href="./privacy-policy.html" class="border-b">Privacy Policy</a></li>
             </ul>
         </div>
 
         <div>
             <ul class="flex gap-3 flex-wrap mt-4 mb-4>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="#" class="border-b">GitHub</a></li>
+                <li><a href="#" class="border-b">LinkedIn</a></li>
+                <li><a href="#" class="border-b">Instagram</a></li>
+                <li><a href="#" class="border-b">Twitter</a></li>
             </ul>
         </div>
         <div class="mt-4 mb-4"> 
 
-            &#169 2025 rishab singh
+            &#169 2025 Rishab Singh
         </div>
         <div>
 
