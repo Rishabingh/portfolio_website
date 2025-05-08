@@ -3,13 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me</title>
+    <link rel="stylesheet" href="output.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXRRDT2G5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KXRRDT2G5M');
+</script>
 </head>
-<body>
-    <h1>
-        this page is coming soon
-    </h1>
-    <h2>work on progress....</h2>
-    <p><a href="./index.html">go back to home page</a></p>
+<body class="bg-black text-white py-25 font-mono">
+    <nav class="flex md:justify-around fixed left-0 right-0 top-0 py-2 items-center mb-2 justify-between navbar z-[8]">
+        <div class="left text-white bg-[#14213D] rounded-full p-2 h-11 w-11 flex justify-center items-center text-2xl font-semibold ml-4 md:ml-0">
+            <div>Rs</div>
+        </div>
+        <div class="right md:block hidden">
+            <ul class="flex gap-2 text-[#14213D] text-[1.2rem] font-bold">
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./index.html">Home</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./about.html">About Me</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./contact.html">Contact</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./resume.html">Resume</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./project.html">Projects</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="mobile-right md:hidden mr-4 cursor-pointer">
+            <img src="./images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+      </nav>
+    
+    <div class="touch-block hidden fixed top-0 left-0 right-0 bottom-0 z-10 bg-white/40 pointer-events-auto"></div>
+    
+      <div class="sidebar fixed right-0 bg-[#14213D] top-0 bottom-0 w-3xs pt-7 px-4 z-20 font-medium transform translate-x-full transition-transform duration-300">
+        <ul class="flex flex-col gap-y-9 text-[#FCA311]">
+            <li class="close-btn self-end cursor-pointer"><img src="./images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./index.html" class="flex gap-x-2.5"><img src="./images/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Home</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./about.html" class="flex gap-x-2.5"><img src="./images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> About Me</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./contact.html" class="flex gap-x-2.5"><img src="./images/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Contact</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./resume.html" class="flex gap-x-2.5"><img src="./images/work_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Resume</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./project.html" class="flex gap-x-2.5"><img src="./images/code_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Projects</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./blog.html" class="flex gap-x-2.5"><img src="./images/newspaper_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Blog</a></li>
+        </ul>
+      </div>
+<main>
+<div class="profile flex">
+    <div class="left-profile flex-2/3 flex flex-col">
+        <span>
+            Hey, I’m Rishab Singh
+        </span>
+        <span>
+            I’m a developer, digital artist, and someone who enjoys turning ideas into interactive things on the web.
+        </span>
+        <span>
+            I’m currently pursuing a BCA and have a deep interest in web development and digital art.
+            I enjoy building clean, functional websites and I’m currently focusing on full-stack development using the MERN stack. 
+            Big fan of clean and minimal web design
+        </span>
+        <span>
+            What I Do
+        </span>
+        <span>
+            <ul>
+                <li>Build websites using MERN Stack</li>
+                <li>Experiment with digital art and design</li>
+                <li>Learn and improve skills</li>
+                <li>Share what I learn through projects</li>
+                <li>Constantly building, breaking, and fixing things</li>
+            </ul>
+        </span>
+        <span>Tech Stack</span>
+        <span>
+            <ul>
+                <li>🛠️ Languages: HTML, CSS, JavaScript</li>
+                <li>⚙ Tools: Git, GitHub, VS Code, Netlify, PostMan</li>
+                <li>🚀 FrameWorks & Libraries : Node.js, Express Js, Next Js, GSAP, React</li>
+                <li>☁ DataBase: MongoDB, My Sql</li>
+            </ul>
+        </span>
+
+    </div>
+    <div class="right-profile flex-1/3">
+        <img src="./images/final-my-image-about.png" alt="" class="aspect-square rounded-full">
+    </div>
+</div>
+</main>
+<script src="navbar.js"></script>
 </body>
 </html>
