@@ -47,6 +47,7 @@
     --radius-md: 0.375rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --blur-sm: 8px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -494,6 +495,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -574,6 +578,10 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-t-2 {
     border-top-style: var(--tw-border-style);
     border-top-width: 2px;
@@ -641,6 +649,12 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .py-25 {
     padding-block: calc(var(--spacing) * 25);
@@ -829,6 +843,19 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .after\:animate-pulse {
+    &::after {
+      content: var(--tw-content);
+      animation: var(--animate-pulse);
+    }
+  }
+  .after\:content-\[\'\|\'\] {
+    &::after {
+      content: var(--tw-content);
+      --tw-content: '|';
+      content: var(--tw-content);
+    }
+  }
   .hover\:-translate-y-2 {
     &:hover {
       @media (hover: hover) {
@@ -904,6 +931,16 @@
       border-bottom-color: var(--color-blue-400);
     }
   }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
   .sm\:text-4xl {
     @media (width >= 40rem) {
       font-size: var(--text-4xl);
@@ -957,9 +994,24 @@
       width: 75vw;
     }
   }
+  .md\:w-\[85vw\] {
+    @media (width >= 48rem) {
+      width: 85vw;
+    }
+  }
+  .md\:w-\[88vw\] {
+    @media (width >= 48rem) {
+      width: 88vw;
+    }
+  }
   .md\:w-\[438px\] {
     @media (width >= 48rem) {
       width: 438px;
+    }
+  }
+  .md\:w-\[vw\] {
+    @media (width >= 48rem) {
+      width: vw;
     }
   }
   .md\:grid-cols-2 {
@@ -1004,6 +1056,16 @@
       width: 75vw;
     }
   }
+  .lg\:w-\[88vw\] {
+    @media (width >= 64rem) {
+      width: 88vw;
+    }
+  }
+  .lg\:w-\[90vw\] {
+    @media (width >= 64rem) {
+      width: 90vw;
+    }
+  }
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1013,6 +1075,11 @@
     @media (width >= 64rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .xl\:w-\[75vw\] {
+    @media (width >= 80rem) {
+      width: 75vw;
     }
   }
   .xl\:text-3xl {
@@ -1252,6 +1319,16 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1308,6 +1385,7 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
+      --tw-content: "";
     }
   }
 }
