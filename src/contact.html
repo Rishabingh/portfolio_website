@@ -3,13 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link href="output.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXRRDT2G5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KXRRDT2G5M');
+</script>
 </head>
-<body>
-    <h1>
-        this page is coming soon
-    </h1>
-    <h2>work on progress....</h2>
-    <p><a href="./index.html">go back to home page</a></p>
+<body class="bg-black text-white py-25 font-mono">
+
+    <nav class="flex md:justify-around fixed left-0 right-0 top-0 py-2 items-center mb-2 justify-between navbar z-[8]">
+        <div class="left text-white bg-[#14213D] rounded-full p-2 h-11 w-11 flex justify-center items-center text-2xl font-semibold ml-4 md:ml-0">
+            <div>Rs</div>
+        </div>
+        <div class="right md:block hidden">
+            <ul class="flex gap-2 text-[#14213D] text-[1.2rem] font-bold">
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./index.html">Home</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./about.html">About Me</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./contact.html">Contact</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./resume.html">Resume</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./project.html">Projects</a></li>
+                <li class=" bg-[#FCA311] px-3 py-1 rounded-md"><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="mobile-right md:hidden mr-4 cursor-pointer">
+            <img src="./images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+      </nav>
+    
+    <div class="touch-block hidden fixed top-0 left-0 right-0 bottom-0 z-10 bg-white/40 pointer-events-auto"></div>
+    
+      <div class="sidebar fixed right-0 bg-[#14213D] top-0 bottom-0 w-3xs pt-7 px-4 z-20 font-medium transform translate-x-full transition-transform duration-300">
+        <ul class="flex flex-col gap-y-9 text-[#FCA311]">
+            <li class="close-btn self-end cursor-pointer"><img src="./images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./index.html" class="flex gap-x-2.5"><img src="./images/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Home</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./about.html" class="flex gap-x-2.5"><img src="./images/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> About Me</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./contact.html" class="flex gap-x-2.5"><img src="./images/call_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Contact</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./resume.html" class="flex gap-x-2.5"><img src="./images/work_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Resume</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./project.html" class="flex gap-x-2.5"><img src="./images/code_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Projects</a></li>
+            <li class="hover:bg-slate-600 p-2 rounded-sm"><a href="./blog.html" class="flex gap-x-2.5"><img src="./images/newspaper_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Blog</a></li>
+        </ul>
+      </div>
+    <main>
+        <div class="form-section lg:w-[75vw] md:mx-auto flex flex-col justify-center items-center my-10 md:w-[50vw] mx-4">
+
+            <div class="form-heading md:text-3xl text-wrap w-fit mx-auto text-2xl after:content-['|'] after:ml-1 after:animate-pulse">
+                Got something cool in mind? I’m open to work, collaboration, and freelance gigs. Feel free to reach out anytime.
+            </div>
+    
+            <form method="POST" id="form" class="flex flex-col gap-4 w-fit mx-auto my-12 justify-center items-center">
+    
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+               <div class="flex flex-col md:flex-row gap-3">
+                   <input type="text" name="name" required placeholder="Name" class="border-[#FCA311] border p-3 h-12 placeholder:text-xl focus:border-[#14213D] focus:outline-none">
+                   <input type="email" name="email" required placeholder="Email" class="border border-[#FCA311] p-3 h-12 placeholder:text-xl focus:border-[#14213D] focus:outline-none">
+               </div>
+                <textarea name="message" required placeholder="Enter Your Message" class="border border-[#FCA311] h-16 md:w-[438px] p-3 placeholder:text-xl w-[338px]"></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+                <button type="submit" class="border-[#FCA311] border w-fit mx-auto p-3 hover:scale-105 cursor-pointer active:border-b-blue-400">Submit Form 🚀</button>
+            
+                <div id="result"></div>
+            
+            </form>
+    
+            <div class="form-heading md:text-2xl text-wrap w-fit mx-auto text-xl">
+                Or Directly Mail Me at: <a href="mailto:rishabsiingh@outlook.com">rishabsiingh@outlook.com</a>
+                <div class="hover:scale-95">
+                    <a href="mailto:rishabsiingh@outlook.com" class="bg-[#FCA311] text-[#14213D] p-1 rounded-md">Mail Now🚀</a>
+                </div>
+                
+            </div>
+    
+         </div>
+
+    </main>
+
+    <footer class="md:w-[75vw] md:mx-auto border-t-2 mt-8 m-4">
+      <div class="footer-nav">
+          <ul class="flex gap-3 flex-wrap">
+              <li><a href="./index.html" class="border-b">Home</a></li>
+              <li><a href="./about.html" class="border-b">About Me</a></li>
+              <li><a href="./contact.html" class="border-b">Contact</a></li>
+              <li><a href="./resume.html" class="border-b">Resume</a></li>
+              <li><a href="./project.html" class="border-b">Projects</a></li>
+              <li><a href="./blog.html" class="border-b">Blog</a></li>
+          </ul>
+      </div>
+
+      <div class="extra-nav">
+          <ul class="flex gap-3 flex-wrap mt-4">
+              <li><a href="./copyright.html" class="border-b">Copyright</a></li>
+              <li><a href="./credits.html" class="border-b">Credits</a></li>
+              <li><a href="./privacy-policy.html" class="border-b">Privacy Policy</a></li>
+          </ul>
+      </div>
+
+      <div>
+          <ul class="flex gap-3 flex-wrap mt-4 mb-4">
+              <li><a href="https://github.com/Rishabingh" target="_blank" class="border-b">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/rishabsingh2/" class="border-b">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/rishabsiiingh/" class="border-b">Instagram</a></li>
+              <li><a href="https://x.com/Mr__ritchi" class="border-b">Twitter</a></li>
+          </ul>
+      </div>
+      <div class="mt-4 mb-4"> 
+
+          &#169 2025 Rishab Singh
+      </div>
+      <div>
+
+          <div>
+              <a href="https://netlify.app">Hosted on Netlify</a>
+          </div>
+
+          <div>
+              <a target="_blank" href="https://icons8.com/icon/102978/visual-studio">Visual Studio</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          </div>
+
+      </div>
+
+      <div>
+          other Icons used from - font awesome , simple icons org , google fonts icon
+      </div>
+
+      <div>
+          made with - HTML , CSS , javascript , TailwindCSS
+      </div>
+
+      <div>
+          <a href="mailto:rishabsiingh@outlook.com">rishabsiingh@outlook.com</a>
+      </div>
+
+    </footer>
+      
+    <section>
+      <div class="floating-bar fixed bottom-6 w-[240px] mx-auto bg-[#FCA311] left-0 right-0 h-13 rounded-3xl">
+          <div class="images flex gap-6 justify-center items-center w-full h-full">
+            <div class="relative group">
+                <span class="absolute -top-10 bg-slate-800 text-white px-1 group-hover:opacity-100 opacity-0 transition-all duration-300 translate-y-2 group-hover:translate-y-0 rounded-sm pointer-events-none whitespace-nowrap">Email</span>
+                <a href="mailto:rishabsiingh@outlook.com">
+                    <img src="./images/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="36px" height="36px" class="shadow-[0_4px_8px_rgba(0,0,0,0.6)] p-1 rounded-full">
+                </a>
+            </div>
+            <div class="relative group">
+              <span class="whitespace-nowrap absolute -top-10 bg-slate-800 text-white px-1 group-hover:opacity-100 opacity-0 transition-all duration-300 translate-y-2 group-hover:translate-y-0 rounded-sm pointer-events-none">github</span>
+              <a href="https://github.com/Rishabingh" target="_blank">
+                  <img src="./images/github.svg" alt="" width="36px" height="36px" class="shadow-[0_4px_8px_rgba(0,0,0,0.6)] p-1 rounded-full">
+              </a>
+            </div>
+            <div class="relative group">
+              <span class="absolute -top-10 bg-slate-800 text-white px-1 group-hover:opacity-100 opacity-0 transition-all duration-300 translate-y-2 group-hover:translate-y-0 rounded-sm pointer-events-none whitespace-nowrap">linked In</span>
+              <a href="https://www.linkedin.com/in/rishabsingh2/" target="_blank">
+                  <img src="./images/linkedin-svgrepo-com.svg" alt="" width="36px" height="36px" class="shadow-[0_4px_8px_rgba(0,0,0,0.6)] p-1 rounded-full">
+              </a>
+            </div>
+            <div class="relative group">
+              <span class="absolute -top-10 bg-slate-800 text-white px-1 group-hover:opacity-100 opacity-0 transition-all duration-300 translate-y-2 group-hover:translate-y-0 rounded-sm pointer-events-none">X(Twitter)</span>
+              <a href="https://x.com/Mr__ritchi" target="_blank">
+                  <img src="./images/x.svg" alt="" width="36px" height="36px" class="shadow-[0_4px_8px_rgba(0,0,0,0.6)] p-1 rounded-full">
+              </a>
+            </div>
+      
+          </div>
+      
+        </div>
+    </section>
+
+    <script src="./navbar.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

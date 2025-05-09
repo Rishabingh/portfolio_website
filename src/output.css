@@ -843,16 +843,36 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .after\:ml-1 {
+    &::after {
+      content: var(--tw-content);
+      margin-left: calc(var(--spacing) * 1);
+    }
+  }
   .after\:animate-pulse {
     &::after {
       content: var(--tw-content);
       animation: var(--animate-pulse);
     }
   }
+  .after\:content-\[\'\'\] {
+    &::after {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
   .after\:content-\[\'\|\'\] {
     &::after {
       content: var(--tw-content);
       --tw-content: '|';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\|\] {
+    &::after {
+      content: var(--tw-content);
+      --tw-content: |;
       content: var(--tw-content);
     }
   }
